@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 
-html,body{
-    width: 100%;
-}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
+
     
 }
 
@@ -19,10 +19,6 @@ html,body{
     font-weight: 600;
     color: white;
 }
-
-
-
-
 
 
 /* NAVIGATION BAR STYLING */
@@ -34,16 +30,18 @@ html,body{
     background: transparent;
     position: fixed;
     width: 100%;
+    
     font-family:'Ubuntu', sans-serif;
     padding: 30px 0;
     transition: 0.5s ease;
     list-style: none;
+    z-index: 999;
     
 }
 
 .navbar.sticky{
-    padding: 5px 0;
-    background-color: rgba(1, 58, 58, 0.987);
+    padding: 3px 0;
+    background-color: rgb(0, 43, 43);
 
 }
 
@@ -51,6 +49,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .navbar .menu li {
@@ -76,7 +75,7 @@ html,body{
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
-    margin: auto;
+    margin: auto auto auto auto;
 
 }
 .navbar .menu li a:hover{
@@ -127,11 +126,13 @@ html,body{
 
 
 h1 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 3.7em;
     letter-spacing: -2px;
     font-weight:600;
     color: #7a05ac;
     text-align: center;
+    z-index: 0;
 }
 
 .cssanimation, .cssanimation span {
@@ -238,9 +239,9 @@ svg {
 /* HAMBURGER MENU STYLING */
 
  nav .openMenu{
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
-    margin: 20px;
+    margin: 25px;
     cursor: pointer;
     display: none;
      
@@ -255,7 +256,12 @@ svg {
 
 
 /* RESPONSIVE WEB DESIGN */
+
+
+
 @media (max-width: 870px){
+
+    
 
     .navbar .menu{
         position: fixed;
@@ -265,16 +271,18 @@ svg {
         left: 0;
         right: 0;
         top: 0;
-         margin: 0;
+        margin: 0;
         justify-content: center;
         flex-direction: column;
-        background: #111;
         text-align: center;
-        padding-top: 80px;
-        transition: all 1.5s ease;
-        background-color: rgb(1, 51, 51);
+        padding-top: -100px;
+        transition: all 1.7s ease;
+        background-color: rgb(1, 34, 34);
+       
         
     }
+
+    
 .navbar .menu li a:hover{
     color: white;
     -webkit-text-stroke: 1px rgb(66, 30, 30);
@@ -293,7 +301,7 @@ svg {
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    margin: auto auto auto 90px;
+    margin: auto auto auto 150px;
     
 }
 
@@ -359,16 +367,16 @@ nav .menu .closeMenu {
 svg {
     display: block;
     font: 7em 'Montserrat';
-    width: 560px;
+    width: 360px;
     height: 150px;
-    margin: 0 auto 0 30px;
+    margin: 0 auto 0 auto;
 }
 
 .home .home-content .text-1{
     margin: 3px auto auto 100px;
 }
 .home .home-content .text-3{
-    margin: 3px auto auto -100px;
+    margin: 3px auto auto auto;
 }
 h1 {
     font-size: 2.5em;
@@ -376,7 +384,7 @@ h1 {
     font-weight:700;
     color: #7a05ac;
     text-align: center;
-    margin: auto auto auto 100px;
+    margin: auto auto auto auto;
 }
 
 
@@ -386,6 +394,7 @@ h1 {
 @media (max-width : 690px){
     .max-width{
         padding: 0 23px;
+        
 
     }
 
@@ -402,14 +411,15 @@ h1 {
         font: 7em 'Montserrat';
         width: 385px;
         height: 250px;
-        margin: -50px 0 auto 30px;
-    }
+        margin: -50px 0 auto 100px;
+        
+    }   
     
     .home .home-content .text-1{
-        margin: 50px auto auto 50px;
+        margin: 50px auto auto 100px;
     }
     .home .home-content .text-3{
-        margin: 10px auto auto  50px;
+        margin: 10px auto auto  100px;
     }
     h1 {
         font-size: 2em;
@@ -417,15 +427,17 @@ h1 {
         font-weight:600;
         color: #7a05ac;
         text-align: center;
-        margin: 3px auto auto 40px;
+        margin: 3px auto auto 90px;
+        z-index: -2;
     }
 .hire-button{
-    margin: 0 auto auto 150px;
+    margin: auto auto auto 210px;
 }
 }
 
 
 @media (max-width: 500px){
+
     .home .home-content .text2 {
         font-size: 50px;
 
@@ -444,6 +456,7 @@ h1 {
 
 section{
     background-color:rgba(178, 185, 185, 0.987);
+    width: 100%;
 }
 
 
@@ -515,13 +528,7 @@ section{
     margin-bottom: 10px ;
 }
 
-@media (max-width:375px){
 
-    .home {
-        width: 100%;
-        margin: auto;
-    }
-}
 
 
 
@@ -531,9 +538,12 @@ section{
 /* responsive media query start */
 @media (max-width: 1300px) {
     .home .max-width{
-        margin-left: -70px;
-        background-color;
+        margin-left: -140px;
+        
     }
+
+
+
     
 }
 
@@ -546,12 +556,14 @@ section{
 
 @media (max-width: 991px) {
     .max-width{
+        
         padding: 0 50px;
     }
 }
 
 
 @media (max-width: 500px) {
+    
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -577,4 +589,64 @@ section{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+
+
+
+
+
+/* SKILLS SECTION STYLING */
+
+
+
+/* all similar content styling codes */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content, 
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
 }

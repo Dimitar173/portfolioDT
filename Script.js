@@ -31,7 +31,7 @@ $( '.menu li a' ).on("click", function(){
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
-        if(this.scrollY > 20){
+        if(this.scrollY > 50){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
@@ -41,7 +41,11 @@ $(document).ready(function(){
     })
 })
 
-
+function onload () {
+    var hamburgerMenu = document.querySelector (".navbar .menu");
+    hamburgerMenu.style.top= '-100%';
+}
+onload ();
 
 
 /* SMOOTH SCROLLING WITH JS FOR ABOUT SECTION */ 
@@ -52,7 +56,7 @@ $(".menu-btn").on("click", function (e) {
     // 2
     const href = $(this).attr("href");
     // 3
-    $("html, body").animate({ scrollTop: $(href).offset().top }, 1000);
+    $("html, body").animate({ scrollTop: $(href).offset().top }, 900);
   });
 
 
@@ -87,6 +91,13 @@ function animateSequence() {
         $this.innerHTML = str;
     }
 }
+
+
+
+
+
+
+
 
 function animateRandom() {
     var a = document.getElementsByClassName('random');
