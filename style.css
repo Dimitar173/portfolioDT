@@ -709,35 +709,35 @@ section .title::after{
     }
 
     .home .home-content .text-1{
-        margin-left: 145px;
+        margin-left: 160px;
         font-size: 25px;
     }
     h1{
-        margin:20px 0 0  140px;
+        margin:20px 0 0  155px;
         font-size: 27px;
     }
     svg{
         width: 100%;
-        margin: -60px 0 0 80px;
+        margin: -60px 0 0 93px;
 
         font-size: 150px;
 
     }
     .hire-button{
-        margin: 0 0 0 190px;
+        margin: 0 0 0 215px;
     }
 
     .about .about-content .left{
         display: flex;
         justify-content: center;
-        margin: 0 auto 30px  125px;
+        margin: 0 auto 30px  155px;
     }
     .about .about-content .right{
         flex: 100%;
-        margin: 0 auto 0 75px;
+        margin: 0 auto 0 110px;
     }
     .about .title{
-        margin: -40px 0 0 127px;
+        margin: -40px 0 0 150px;
     }
 }
 
