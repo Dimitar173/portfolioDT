@@ -41,11 +41,20 @@ $(document).ready(function(){
     })
 })
 
+
+
+
+
+// ONLOAD DONT SHOW HAMBURGER //
+
 function onload () {
     var hamburgerMenu = document.querySelector (".navbar .menu");
+    
     hamburgerMenu.style.top= '-100%';
 }
 onload ();
+
+
 
 
 /* SMOOTH SCROLLING WITH JS FOR ABOUT SECTION */ 
