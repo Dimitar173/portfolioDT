@@ -102,61 +102,113 @@ html,body{
 
 .home .home-content .text-1 {
     font-size: 25px;
+    margin: 100px auto 0 0; 
+    text-align: center;
 
-}
-
-
-
-@keyframes breathe {
-    0% {
-        font-variation-settings: 'wght' 100, 'wdth' 85;
-        font-size: 2vw;
-    }
-    60% {
-        font-variation-settings: 'wght' 700, 'wdth' 100;
-        font-size: 2.5vw;
-        color: blueviolet;
-    }
-
-    
-    100% {
-        font-variation-settings: 'wght' 100, 'wdth' 85;
-        font-size: 3vw;
-        color: blue;
-    }
-}
-
-
-
-.home .home-content .text-2 {
-    font-size: 65px;
-    font-weight: 600;
-    margin-left: -3px;
 }
 
 .home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
+    text-align: center;
 }
+@keyframes leFlyInBottom {
+    0% {
+        transform: translate(0px, 80px);
+        opacity: 0
+    }
+    70% {
+        transform: translate(10px, -50px);
+        animation-timing-function: ease-in-out
+    }
+}
+
+
+
+
+h1 {
+    font-size: 3.7em;
+    letter-spacing: -2px;
+    font-weight:600;
+    color: #7a05ac;
+    text-align: center;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.leFlyInBottom span { animation-name: leFlyInBottom }
+
+
 .home .home-content .text-3 span{
     color: red;
     font-weight: 500;
     font-weight: bold;
 }
 
-span{
-    color: rgb(173, 2, 2);
-    --delay: calc((var(--char-index) + 1) * 400ms);
-    animation: breathe 4000ms infinite both;
-    animation-delay: var(--delay);
+.naslov span{
+    color: rgb(161, 39, 9);
 }
+
+svg {
+    display: block;
+    font: 7em 'Montserrat';
+    width: 860px;
+    height: 240px;
+    margin: 0 0 0 0;
+
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #b40c85;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #ee0748;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #e00c48;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #ffee00;
+	animation-delay: -5s;
+}
+    
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+
 
 
 /* GET IN TOUCH BUTTON STYLING */
 
 
 .hire-button{
-    background-color: rgb(139, 0, 0); /* Green */
+    background-color: rgb(94, 2, 71); /* Green */
     border-radius: 5%;
     border:rgb(173, 2, 2);
     color: white;
@@ -166,7 +218,8 @@ span{
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    margin: auto auto auto 130px;
+    margin: auto 330px;
+    
     
 }
 .hire-button a {
@@ -174,8 +227,9 @@ span{
     color: white;
 }
 .hire-button a:hover{
-    color: black;
+    color: rgb(100, 99, 102);
     transition: 0.7s ease-in-out;
+ 
 
 }
 
@@ -205,31 +259,31 @@ span{
 
     .navbar .menu{
         position: fixed;
-        z-index: 10;
-        width :100%;
-        height: 100vh;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
         left: 0;
         right: 0;
         top: 0;
-         margin: auto;
+         margin: 0;
         justify-content: center;
         flex-direction: column;
         background: #111;
         text-align: center;
         padding-top: 80px;
         transition: all 1.5s ease;
-        background-color: rgba(1, 58, 58, 0.987);
+        background-color: rgb(1, 51, 51);
         
     }
 .navbar .menu li a:hover{
     color: white;
-    -webkit-text-stroke: 1px rgb(46, 32, 32); /* width and color */
+    -webkit-text-stroke: 1px rgb(66, 30, 30);
     
 
 }
 
 .hire-button{
-    background-color: rgb(139, 0, 0); /* Green */
+    background-color: rgb(99, 6, 57); /* Green */
     border-radius: 5%;
     border:rgb(173, 2, 2);
     color: white;
@@ -239,7 +293,7 @@ span{
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    margin: auto;
+    margin: auto auto auto 90px;
     
 }
 
@@ -301,6 +355,31 @@ nav .menu .closeMenu {
     margin-bottom: 35px;
 }
 
+
+svg {
+    display: block;
+    font: 7em 'Montserrat';
+    width: 560px;
+    height: 150px;
+    margin: 0 auto 0 30px;
+}
+
+.home .home-content .text-1{
+    margin: 3px auto auto 100px;
+}
+.home .home-content .text-3{
+    margin: 3px auto auto -100px;
+}
+h1 {
+    font-size: 2.5em;
+    letter-spacing: -2px;
+    font-weight:700;
+    color: #7a05ac;
+    text-align: center;
+    margin: auto auto auto 100px;
+}
+
+
 }  
 
 
@@ -310,16 +389,39 @@ nav .menu .closeMenu {
 
     }
 
-    .home .home-content .text2 {
-        font-size: 60px;
-
-    }
+   
 
     .home .home-content .text3 {
 
         font-size: 32px;
     }
 
+
+    svg {
+        display: block;
+        font: 7em 'Montserrat';
+        width: 385px;
+        height: 250px;
+        margin: -50px 0 auto 30px;
+    }
+    
+    .home .home-content .text-1{
+        margin: 50px auto auto 50px;
+    }
+    .home .home-content .text-3{
+        margin: 10px auto auto  50px;
+    }
+    h1 {
+        font-size: 2em;
+        letter-spacing: -2px;
+        font-weight:600;
+        color: #7a05ac;
+        text-align: center;
+        margin: 3px auto auto 40px;
+    }
+.hire-button{
+    margin: 0 auto auto 150px;
+}
 }
 
 
@@ -429,8 +531,10 @@ section{
 /* responsive media query start */
 @media (max-width: 1300px) {
     .home .max-width{
-        margin-left: 0px;
+        margin-left: -70px;
+        background-color;
     }
+    
 }
 
 @media (max-width: 1104px) {
