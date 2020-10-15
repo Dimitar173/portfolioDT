@@ -1,10 +1,7 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-body{
-    width: auto;
-    margin: 0 0 0 -105px;
-}
+
 
 *{
     margin: 0;
@@ -41,8 +38,9 @@ body{
 }
 
 .navbar.sticky{
-    padding: 0px;
+    padding: 3px 2px;
     background-color: rgb(0, 43, 43);
+    
 
 }
 
@@ -105,15 +103,16 @@ body{
 
 .home .home-content .text-1 {
     font-size: 25px;
-    margin: 100px auto 0 0; 
+    margin: 100px auto 0 30px; 
     text-align: center;
-
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .home .home-content .text-3 {
     font-size: 40px;
-    margin: 5px 0;
+    margin: 10px 0 0 30px;
     text-align: center;
+    
 }
 @keyframes leFlyInBottom {
     0% {
@@ -131,12 +130,13 @@ body{
 
 h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 3.7em;
+    font-size: 3.3em;
     letter-spacing: -2px;
     font-weight:600;
-    color: #7a05ac;
+    color: #800579;
     text-align: center;
     z-index: 0;
+    margin-left: 30px;
 }
 
 .cssanimation, .cssanimation span {
@@ -149,14 +149,10 @@ h1 {
 .leFlyInBottom span { animation-name: leFlyInBottom }
 
 
-.home .home-content .text-3 span{
-    color: red;
-    font-weight: 500;
-    font-weight: bold;
-}
+
 
 .naslov span{
-    color: rgb(161, 39, 9);
+    color: rgb(218, 0, 0);
 }
 
 svg {
@@ -345,6 +341,10 @@ section{
 
 
 
+
+
+
+
 /* responsive media query start */
 
 
@@ -483,6 +483,10 @@ h1 {
     margin: auto auto auto auto;
 }
 }  
+
+
+
+
 @media (max-width : 690px){
     body{
         background-color: blueviolet;
@@ -509,7 +513,7 @@ h1 {
         font: 7em 'Montserrat';
         width: 385px;
         height: 250px;
-        margin: -50px 0 auto 100px;
+        margin: -50px 0 auto 180px;
         
     }   
     
@@ -534,29 +538,7 @@ h1 {
 }
 
 
-@media (max-width: 500px){
-    nav{
-        margin: 0 0 0 0px;
-    }
-    .home .home-content .text-3{
-        margin-left: 100px;
-    }
 
-    .home .home-content .text-1{
-        margin-left: 140px;
-    }
-    h1{
-        margin-left: 131px;
-        font-size: 27px;
-    }
-    svg{
-        width: 100%;
-        margin-left: 50px;
-        font-size: 140px;
-
-    }
-
-}
 
 
 @media (max-width: 1300px) {
@@ -652,7 +634,7 @@ section{
     padding: 0 80px;
     margin: auto auto auto auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .skills, .contact{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
@@ -672,82 +654,100 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: rgb(2, 0, 0);
-    transform: translateX(-50%);
-}
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
 
 
 
 
 
+
+
+
+
+/* NOVI QUERRY-NA ZA RESPONSE */
 
 @media (max-width: 490px){
-
-    nav{
-        margin: 0 0 0 0;
-    }
+   .navbar .openMenu{
+       margin-left: 180px;
+   }
+   nav{
+       
+       margin: 0 0 0 0px; 
+   }
     .home .home-content .text-3{
-        margin-left: 105px;
+        text-align: center;
         font-size: 30px;
+        margin: auto auto auto 140px;
     }
 
     .home .home-content .text-1{
-        margin-left: 160px;
+       text-align: center;
         font-size: 25px;
+        margin-top: 100px 
     }
+
     h1{
-        margin:20px 0 0  155px;
-        font-size: 27px;
+        
+        font-size: 20px;
+        text-align: center;
     }
+
     svg{
-        width: 100%;
-        margin: -60px 0 0 93px;
-
+        width:200px;
+        text-align: center;
         font-size: 150px;
+       margin-left: 130px;
+       margin-top : -70px;
 
     }
+
     .hire-button{
-        margin: 0 0 0 215px;
+        text-align:center;
+        align-items: center;
+        margin: -150px 0 0 148px
     }
 
     .about .about-content .left{
         display: flex;
         justify-content: center;
-        margin: 0 auto 30px  155px;
+        margin: 0 auto 30px  20px;
+        width: 150px;
+       
     }
     .about .about-content .right{
         flex: 100%;
-        margin: 0 auto 0 110px;
+        margin: 0 auto 0 50px;
     }
     .about .title{
-        margin: -40px 0 0 150px;
+        margin: -40px 0 0 90px;
+    }
+
+    .skills .skills-content p{
+        margin: 0 0 0 45px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skills .title{
+       text-align: center;
+    }
+    
+    .skills .text {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 0 0 28px;
+        color: rgb(102, 1, 1);
+    }
+    .about .about-content .left img{
+        margin: 0 0 0 210px;
+        width: 300px;
+    }
+    .skills .info {
+        margin: 0 0 0 50px;
     }
 }
 
 
 
-@media (max-width: 399px){
-    body{
-        margin-left: -228px;
-    }
-    nav{
-        margin: 0 0 0 110px
-    }
-}
+
