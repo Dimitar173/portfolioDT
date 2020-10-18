@@ -696,6 +696,90 @@ section .title{
 
 
 
+/*CONTACT STYLING */
+body{
+    background-color: rgba(178, 185, 185, 0.987);
+}
+form{
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgb(75, 2, 2);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.contact{
+    background-color: rgba(138, 121, 121, 0.678)678);
+}
+.contact .title{
+    margin-top: -50px;
+}
+
+label{
+    display: block;
+    text-align:center;
+   margin: 30px 0 0 0;
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+ 
+   border-radius: 4px;
+   box-sizing: border-box;
+   
+}
+.contact textarea{
+    height: 150px;
+    width: 330px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid rgb(104, 4, 4);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+   
+}
+
+
+.subject, .email{
+    height: 40px;
+    width: 330px;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid rgb(122, 7, 7);
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .send_button {
+    background-color: rgb(5, 0, 0);
+    border-radius: 4%;
+    border:rgb(173, 2, 2);
+    color: white;
+    padding: 10px 150px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    
+    font-family: 'Poppins', sans-serif;
+    
+    
+    
+}
+.contact .send_button:hover{
+    color: rgb(100, 99, 102);
+    
+}
 
 
 
@@ -824,7 +908,23 @@ section .title{
     hr{
         background-color: rgb(0, 48, 29);
     }
-
+    form{
+    max-width: 380px;
+    margin: 40px 0 0 115px;
+    }
+    .contact .email{
+        margin-left: -30px;
+    }
+    .contact .subject{
+        margin-left: -30px;
+    }
+    .contact .message{
+        margin-left: -30px;
+        width: 330px;
+    }
+    .contact .send_button{
+        margin: -25px auto auto -30px
+    }
 
 }
 

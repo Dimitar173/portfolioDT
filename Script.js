@@ -102,12 +102,6 @@ function animateSequence() {
 }
 
 
-
-
-
-
-
-
 function animateRandom() {
     var a = document.getElementsByClassName('random');
     for (var i = 0; i < a.length; i++) {
@@ -143,3 +137,12 @@ function animateRandom() {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+
+const name = document.querySelector(".subject");
+const email = document.querySelector (".email");
+const message = document.querySelector (".message");
+const form = document.querySelector ('.send_button');
+
+
